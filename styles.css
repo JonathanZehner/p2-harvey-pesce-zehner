@@ -8,6 +8,11 @@
 
 /*--============ UNIVERSAL STYLING ==========--*/
 
+/*-- Zehner Style --*/
+.desktop-nav {
+  display: none;
+}
+
 :root {
   --red-color: #b5111a;
   --black-color: #222222;
