@@ -1,0 +1,69 @@
+:root {
+    --red-color: #b5111a;
+    --black-color: #222222;
+    --blue-text-color: #215da6;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: stencil-std;
+    font-size: 4em;
+    color: #215da6;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    padding: 0 10vh;
+  }
+
+  .banners {
+      margin-top: -5px;
+      max-width: 100%;
+  }
+
+  li {
+      display: inline-flex;
+      padding: 3vh 10vh;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .bottom-links {
+      text-decoration: underline;
+      color: black;
+  }
+
+  .main-logo {
+      float: left;
+      width: 30vh;
+      padding: 10px 0 10px 30px;
+  }
+
+  .socials {
+      width: 5%;
+      padding: 5%;
+  }
+
+  .foot-contact {
+    font-size: 1em;
+    color: blue;
+  }
+
+  .bottom-text {
+    font-size: 1em;
+  }
+
+  footer {
+    background-image: url('images/foot-img.png');
+    background-position: center;
+    background-size: cover;
+  }
