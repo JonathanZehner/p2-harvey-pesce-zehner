@@ -113,9 +113,11 @@ footer {
   display: none;
 }
 
+.page-header a,
 .main-logo {
-  width: 50%;
+  width: 175px;
 }
+
 /* Begin Hamburger Style */
 .hamburger {
   background: none;
@@ -165,14 +167,15 @@ footer {
 
 .about-main {
   background: white url(images/about-hero.png) no-repeat 0 0;
-  height: 100vh;
+  background-size: contain;
+  height: 70vh;
 }
 
 .about-content {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  height: 110%;
+  height: 115%;
   justify-content: flex-end;
 }
 
@@ -265,12 +268,86 @@ footer {
 /*-- End Z-Style --*/
 
 /*--========== MEDIA QUERIES ==========--*/
-/*-- Start xxx Min-Width Media Query --*/
+/*-- Start 370 Min-Width Media Query --*/
+@media (min-width: 370px) {
+  .about-content {
+    height: 110%;
+  }
+}
 
-/*-- End xxx Min-Width Media Query --*/
-/*-- Start xxx Min-Width Media Query --*/
+/*-- End 370 Min-Width Media Query --*/
 
-/*-- End xxx Min-Width Media Query --*/
-/*-- Start xxx Min-Width Media Query --*/
+/*-- Start 525 Min-Width Media Query --*/
+@media (min-width: 525px) {
+  /* Header */
+  .navMenu {
+    display: none;
+  }
 
-/*-- End xxx Min-Width Media Query --*/
+  .desktop-nav {
+    display: block;
+    text-align: center;
+    width: 50%;
+  }
+
+  .nav-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 15px 25px 0 0;
+  }
+
+  .nav-main li {
+    width: 60px;
+  }
+
+  /* Main Content */
+  .about-main {
+    height: 78vh;
+  }
+
+  .about-content {
+    height: 100%;
+  }
+
+  .about-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .about-wrapper .first,
+  .about-wrapper .second {
+    width: 40%;
+  }
+
+  /* Footer */
+  .page-footer {
+    margin-top: 0;
+  }
+
+  .foot {
+    padding: 10px 5% 50px 5%;
+  }
+}
+
+/*-- End 525 Min-Width Media Query --*/
+
+/*-- Start 800 Min-Width Media Query --*/
+@media (min-width: 800px) {
+  /* Main Content */
+  .about-main {
+    height: 82vh;
+  }
+}
+
+/*-- End 800 Min-Width Media Query --*/
+
+/*-- Start 860 Min-Width Media Query --*/
+@media (min-width: 860px) {
+  .about-page {
+    margin: 0 auto;
+    max-width: 860px;
+  }
+}
+
+/*-- End 860 Min-Width Media Query --*/
