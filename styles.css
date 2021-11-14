@@ -28,6 +28,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font: normal 1rem/1.5 "Montserrat", arial, sans-serif;
 }
 
 main {
@@ -302,7 +303,7 @@ button:hover {
 .about-main {
   background: white url(images/about-hero.png) no-repeat 0 0;
   background-size: contain;
-  height: 70vh;
+  height: 82vh;
 }
 
 .about-content {
@@ -488,7 +489,7 @@ button:hover {
 
   /* Main Content */
   .about-main {
-    height: 78vh;
+    height: 95vh;
   }
 
   .about-content {
@@ -520,10 +521,6 @@ button:hover {
 /*-- Start 800 Min-Width Media Query --*/
 @media (min-width: 800px) {
   /* Main Content */
-  .about-main {
-    height: 82vh;
-  }
-
   .about-content {
     height: 95%;
   }
