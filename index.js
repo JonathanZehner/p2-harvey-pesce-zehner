@@ -12,15 +12,15 @@ var hamburger= document.querySelector(".hamburger");
 var closeIcon= document.querySelector(".closeIcon");
 var menuIcon = document.querySelector(".menuIcon");
 
-closeIcon.style.display = "none";
 hamburger.style.display = "block";
+closeIcon.style.display = "none";
 
 // Hamburger Function: code that makes it work
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
     hamburger.style.display = "block";
+    closeIcon.style.display = "none";
   } else {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
