@@ -45,7 +45,7 @@ h1 {
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  padding: 0 10vh;
+  /* padding: 0 10vh; */
 }
 
 .banners {
@@ -80,16 +80,20 @@ a {
 
 .foot-contact {
   font-size: 1em;
-  color: blue;
+  color: #215da6;
+  /* Z's edit */
+  padding-bottom: 25px;
 }
 
 .bottom-text {
   font-size: 1em;
+  /* Z's edit */
+  padding-bottom: 15px;
 }
 
 footer {
   /* Z's edit */
-  background: white url("images/foot-img.png") no-repeat bottom;
+  background: url("images/foot-img.png") no-repeat bottom;
   background-size: contain;
   /* Sticky Footer */
   flex-shrink: 0;
@@ -212,6 +216,7 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
 .foot {
@@ -220,18 +225,43 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-around;
   padding: 50px 5%;
-  width: 100%;
+  width: 95%;
+}
+
+.btop {
+  padding: 0 2%;
+  text-align: center;
 }
 
 .footer-links {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 .footer-links li {
   padding: 0 15px;
 }
 
+.social-media {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+}
+
+.social-media img {
+  width: 50px;
+}
+
+.footer-info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 50px 5% 5px;
+  text-align: center;
+}
 /*-- End Z-Style --*/
 
 /*--========== MEDIA QUERIES ==========--*/
