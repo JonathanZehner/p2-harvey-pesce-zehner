@@ -5,112 +5,14 @@
   padding: 0;
 }
 
-/*--============ UNIVERSAL STYLING ==========--*/
+/*--========== FONTS ===========--*/
+/*-- Font Family: Stencil Std --*/
+/* font: "stencil-std" */
 
-/*-- Zehner Style --*/
-/* Header */
-.page-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 25px 2%;
-  width: 100%;
-}
+/*-- Font Family: Montserrat --*/
+/* font: "Montserrat" */
 
-.desktop-nav {
-  display: none;
-}
-
-.main-logo {
-  width: 50%;
-}
-
-/* Hamburger Menu */
-.hamburger {
-  background: none;
-  border: 0;
-  color: #215da6;
-  cursor: pointer;
-  font-size: 1.4em;
-  font-weight: bold;
-  line-height: 45px;
-  outline: none;
-  padding-right: 15px;
-  position: absolute;
-  right: 0;
-  z-index: 10000000000000;
-}
-
-.cross {
-  background: none;
-  border: 0;
-  color: #215da6;
-  cursor: pointer;
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 65px;
-  outline: none;
-  padding-right: 15px;
-  position: absolute;
-  right: 0;
-  z-index: 10000000000000;
-}
-
-.menu {
-  background-image: linear-gradient(to right, #749757e6, #b7c2c4, #549db1e6);
-  font-size: 12px;
-  position: absolute;
-  text-align: center;
-  top: 100px;
-  width: 100%;
-  z-index: 1000000;
-}
-
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
-}
-
-.menu li {
-  border-bottom: #1e2223e3 1px solid;
-  display: block;
-  padding: 15px 0 15px 0;
-}
-
-.menu li:hover {
-  background: #1e2223;
-  border-bottom: #b7c2c4 1px solid;
-  display: block;
-  padding: 15px 0 15px 0;
-}
-
-.menu ul li a {
-  color: #549db1;
-  font: bold 1.3rem/1 "arr-dep", sans-serif;
-  margin: 0px;
-  text-decoration: none;
-  text-shadow: 1px 1px #00000073;
-}
-
-.menu ul li a:hover {
-  color: #749757;
-  text-decoration: none;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #666;
-}
-
-.menu a:hover {
-  text-decoration: none;
-  color: #666;
-}
-/* End Hamburger Menu */
-
-/*-- End Z-Style --*/
+/*--========== UNIVERSAL STYLING ==========--*/
 
 :root {
   --red-color: #b5111a;
@@ -175,6 +77,73 @@ footer {
   background-position: center;
   background-size: cover;
 }
+
+/*-- Zehner Style --*/
+/* Header */
+.page-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 25px 2%;
+  width: 100%;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.main-logo {
+  width: 50%;
+}
+/* Begin Hamburger Style */
+.hamburger {
+  background: none;
+  border: none;
+  color: #215da6;
+  cursor: pointer;
+  padding-right: 15px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 100;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  background-image: linear-gradient(to right, #215da6, white, #215da6);
+  color: red;
+  list-style-type: none;
+  font: bold 1.5rem/1.5 "stencil-std", serif;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  top: 50px;
+  transform: translateY(-200%);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.navMenu ul li {
+  border-bottom: 1px solid white;
+}
+
+.navMenu ul li a {
+  color: red;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px grey;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+/* End Hamburger Menu */
+
+/*-- End Z-Style --*/
 
 /*--========== MEDIA QUERIES ==========--*/
 /*-- Start xxx Min-Width Media Query --*/

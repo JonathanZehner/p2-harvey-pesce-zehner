@@ -20,7 +20,15 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 
 (Insert any resources used in this area: whether for research, help with coding, or designs) .
 
+- <p>Alhakem, Mohammed. _Burger Menu with vanilla JS_  **https://codepen.io/AlHakem/pen/pKoEYp**
+
 - <p>Glenn Smith. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**
+
+- <p>Google Fonts. _Material Icons Guide_  **https://developers.google.com/fonts/docs/material_icons**
+
+- <p>ljc-dev. (January 1, 2021). _Easy hamburger menu with JS - Beginners_  **https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0**
+
+- <p>MDN Web Docs. _Introduction to events_  **https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events**
 
 - <p>W3 Schools. CSS Shadow Effects. https://www.w3schools.com/css/css3_shadows.asp
 
@@ -49,6 +57,12 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
    <p> Merging collaborator branches into the *main* branch upon initial setup.
 
   ##### Resolution: After extensive troubleshooting with all team collaborators on GitHub, we deleted the original index.html file from the main branch because there was no apparent reason for the conflict. The branch code was clean and should not have had any issues merging. After deleting, we manually merged the file locally and then pushed the changes to the remote repository.
+
+- #### Issue 3:
+
+   <p> Creating a Vanilla JS Hamburger Menu.
+
+  ##### Resolution: Researched (extensively) various resources online.
 
 ---
 
