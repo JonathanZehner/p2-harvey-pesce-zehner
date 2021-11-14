@@ -231,16 +231,14 @@ button:hover {
 }
 
 .desktop-nav {
+  color: #b5111a;
   display: none;
+  font: bold 1rem/1.5 "stencil-std", serif;
 }
 
+.page-header a,
 .main-logo {
-  width: 25%;
-  padding-bottom: 2px;
-}
-
-.main-logo:hover {
-  cursor: pointer;
+  width: 175px;
 }
 
 /* Begin Hamburger Style */
@@ -252,7 +250,7 @@ button:hover {
   padding-right: 15px;
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 2rem;
   z-index: 100;
 }
 
@@ -261,15 +259,20 @@ button:hover {
 }
 
 .menu {
+  align-items: center;
   background-image: linear-gradient(to right, #215da6, white, #215da6);
   color: #b5111a;
+  display: flex;
   list-style-type: none;
-  font: bold 1.5rem "stencil-std", serif;
+  flex-flow: column nowrap;
+  font: bold 1.5rem/1.5 "stencil-std", serif;
+  justify-content: center;
+  left: 0;
   margin: 0 auto;
   padding: 0;
   position: fixed;
   text-align: center;
-  top: 60px;
+  top: 70px;
   transform: translateY(-200%);
   transition: transform 0.3s ease-in-out;
   width: 100%;
@@ -277,6 +280,8 @@ button:hover {
 
 .navMenu ul li {
   border-bottom: 1px solid white;
+  justify-content: center;
+  width: 100%;
 }
 
 .navMenu ul li a {
@@ -292,14 +297,15 @@ button:hover {
 
 .about-main {
   background: white url(images/about-hero.png) no-repeat 0 0;
-  height: 100vh;
+  background-size: contain;
+  height: 70vh;
 }
 
 .about-content {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  height: 110%;
+  height: 115%;
   justify-content: flex-end;
 }
 
@@ -392,13 +398,86 @@ button:hover {
 /*-- End Z-Style --*/
 
 /*--========== MEDIA QUERIES ==========--*/
-/*-- Start xxx Min-Width Media Query --*/
+/*-- Start 370 Min-Width Media Query --*/
+@media (min-width: 370px) {
+  .about-content {
+    height: 110%;
+  }
+}
 
-/*-- End xxx Min-Width Media Query --*/
-/*-- Start xxx Min-Width Media Query --*/
+/*-- End 370 Min-Width Media Query --*/
 
-/*-- End xxx Min-Width Media Query --*/
-/*-- Start xxx Min-Width Media Query --*/
+/*-- Start 525 Min-Width Media Query --*/
+@media (min-width: 525px) {
+  /* Header */
+  .navMenu {
+    display: none;
+  }
 
-/*-- End xxx Min-Width Media Query --*/
+  .desktop-nav {
+    display: block;
+    text-align: center;
+    width: 50%;
+  }
 
+  .nav-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 15px 25px 0 0;
+  }
+
+  .nav-main li {
+    width: 60px;
+  }
+
+  /* Main Content */
+  .about-main {
+    height: 78vh;
+  }
+
+  .about-content {
+    height: 100%;
+  }
+
+  .about-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .about-wrapper .first,
+  .about-wrapper .second {
+    width: 40%;
+  }
+
+  /* Footer */
+  .page-footer {
+    margin-top: 0;
+  }
+
+  .foot {
+    padding: 10px 5% 50px 5%;
+  }
+}
+
+/*-- End 525 Min-Width Media Query --*/
+
+/*-- Start 800 Min-Width Media Query --*/
+@media (min-width: 800px) {
+  /* Main Content */
+  .about-main {
+    height: 82vh;
+  }
+}
+
+/*-- End 800 Min-Width Media Query --*/
+
+/*-- Start 860 Min-Width Media Query --*/
+@media (min-width: 860px) {
+  .about-page {
+    margin: 0 auto;
+    max-width: 860px;
+  }
+}
+
+/*-- End 860 Min-Width Media Query --*/
