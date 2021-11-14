@@ -29,33 +29,38 @@
 
 <body>
     <header>
-        <div class="nav-menus" id="home">
+        <div class="nav-menus">
             <!-- Hamburger Buttons -->
             <button class="hamburger">&#9776;</button>
             <button class="cross">&#735;</button>
             <!-- Hamburger Menu Nav -->
-            <nav class="ham-menu menu">
+            <nav class="menu">
                 <ul class="nav-main">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a class="menu-item" href="index.html">Home</a></li>
+                    <li><a class="menu-item" href="about.html">About</a></li>
+                    <li><a class="menu-item" href="services.html">Services</a></li>
                 </ul>
             </nav>
 
             <!-- Desktop Nav Menu -->
-            <a><img class="main-logo" src="images/wwp_logo_black.png" title="main-logo" alt="main-logo" /></a>
+            <a href="index.html"><img class="main-logo" src="images/wwp_logo_black.png" title="main-logo" alt="main-logo" /></a>
+            
             <nav class="desktop-nav">
                 <ul class="nav-tright">
                     <!-- replace with social media icon <li><a href="https://www.facebook.com/Nomad-Designs-113450920781941" target="_blank"><i class="fa fa-facebook-square" style="font-size:25px;color:#4267B2"></i></a></li> -->
                 </ul>
-
-                <ul class="nav-main">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
             </nav>
         </div>
+
+        <ul class="main-nav">
+            <ul onclick="mainNav()" class="dropdown-menu">Menu</ul>
+            <div id="dropdownMenu" class="dropdown-pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            </div>
+          </div>
+
     </header>
 
     <main>
@@ -65,7 +70,7 @@
                 <img class="banners" src="images/home-banner2.jpg" title="home-banner2" alt="home-banner2" />
 
                 <div class="tagline">
-                    <h1>HONOR THE WARRIORS WHO SACRIFICED</h1>
+                    <h1 class="honor">HONOR THE WARRIORS WHO SACRIFICED</h1>
                     <p class="home-body-copy">For many of our nation’s bravest, emotional recovery starts by asking for
                         help. Not only do 3 out of 4 service members live with post-traumatic stress disorder (PTSD),
                         but 1 in 3 injured warriors also struggle to get the mental health care they need. We’re here to
@@ -73,6 +78,37 @@
                 </div>
             </header>
         </div>
+
+        <div class="contact-title-container">
+            <p class="contact-title">Want to reach out?<br />We'd love to hear from you!</p><br /><br />
+            <form>
+              <div class="row">
+                <label for="nameTag">Name:</label>
+                <input
+                  type="text"
+                  id="nameTag"
+                  name="name"
+                  placeholder="Your name"
+                  pattern="^\w+\s\w+$"
+                  required />
+              </div>
+              <div class="row">
+                <label>
+                  Email:</label>
+                  <input 
+                  type="email" 
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  pattern="^\w+\s\w+$" 
+                  required />
+              </div>
+              <div class="row">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+        </div>
+
     </main>
 
     <footer>
@@ -97,6 +133,6 @@
         <p class="bottom-text">Wounded Warrior Project in a tex-exempt 501(C)(3) nonprofit organization CFC #11425</p>
         <br /><br /><br /><br />
     </footer>
+    <script src="index.js"></script>
 </body>
-
 </html>
