@@ -105,10 +105,9 @@ main {
   max-width: 100%;
 }
 
-li {
+/* li {
   display: inline-flex;
-  /* padding: 3vh 10vh; */
-}
+} */
 
 a {
   text-decoration: none;
@@ -277,10 +276,22 @@ button:hover {
   width: 100%;
 }
 
+.navMenu ul li:hover {
+  background: black;
+}
+
 .navMenu ul li a {
   color: #b5111a;
   text-decoration: none;
   text-shadow: 1px 1px 3px grey;
+}
+
+.navMenu ul li a:visited {
+  color: #215da6;
+}
+
+.navMenu ul li a:hover {
+  color: white;
 }
 
 .showMenu {
@@ -298,12 +309,13 @@ button:hover {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  height: 115%;
+  height: 100%;
   justify-content: flex-end;
 }
 
 .about-content h1 {
-  font-size: 2.5rem;
+  color: #215da6;
+  font: bold 2.5rem/1.5 "stencil-std";
 }
 
 .about-wrapper {
@@ -342,7 +354,6 @@ button:hover {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  margin-top: 100px;
 }
 
 .foot {
@@ -355,6 +366,7 @@ button:hover {
 }
 
 .btop {
+  list-style-type: none;
   padding: 0 2%;
   text-align: center;
 }
@@ -363,6 +375,7 @@ button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  list-style-type: none;
 }
 
 .footer-links li {
@@ -442,11 +455,11 @@ button:hover {
 
 /*--========== MEDIA QUERIES ==========--*/
 /*-- Start 370 Min-Width Media Query --*/
-@media (min-width: 370px) {
+/* @media (min-width: 370px) {
   .about-content {
     height: 110%;
   }
-}
+} */
 
 /*-- End 370 Min-Width Media Query --*/
 
@@ -467,11 +480,16 @@ button:hover {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    list-style-type: none;
     padding: 15px 25px 0 0;
   }
 
   .nav-main li {
     width: 60px;
+  }
+
+  .nav-main li a:hover {
+    color: #b5111a;
   }
 
   /* Main Content */
@@ -480,7 +498,7 @@ button:hover {
   }
 
   .about-content {
-    height: 100%;
+    height: 90%;
   }
 
   .about-wrapper {
@@ -510,6 +528,10 @@ button:hover {
   /* Main Content */
   .about-main {
     height: 82vh;
+  }
+
+  .about-content {
+    height: 95%;
   }
 }
 
