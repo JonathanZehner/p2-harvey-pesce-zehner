@@ -62,7 +62,7 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 
    <p> Creating a Vanilla JS Hamburger Menu.
 
-  ##### Resolution: Researched (extensively) various resources online.
+  ##### Resolution: Researched (extensively) various resources online. Finally, followed a step-by-step coding tutorial by ljc-dev.
 
 ---
 
