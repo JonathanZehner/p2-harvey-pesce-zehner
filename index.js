@@ -6,11 +6,11 @@
 
 // Hamburger Menu
 // Hamburger Variables
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+var menu = document.querySelector(".menu");
+var menuItems = document.querySelectorAll(".menuItem");
+var hamburger= document.querySelector(".hamburger");
+var closeIcon= document.querySelector(".closeIcon");
+var menuIcon = document.querySelector(".menuIcon");
 
 // Hamburger Function: code that makes it work
 function toggleMenu() {

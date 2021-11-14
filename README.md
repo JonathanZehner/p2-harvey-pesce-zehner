@@ -30,13 +30,9 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 
 - <p>MDN Web Docs. _Introduction to events_  **https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events**
 
-- <p>W3 Schools. CSS Shadow Effects. https://www.w3schools.com/css/css3_shadows.asp
+- <p>W3 Schools. _CSS Shadow Effects_. https://www.w3schools.com/css/css3_shadows.asp
 
-- <p>Scott Robbin. (2013). jQuery Backstretch. https://github.com/jquery-backstretch/jquery-backstretch
-
-- <p>Rao J. Guruprasad. (May 8, 2015). jQuery backstretch plugin won't work at all [answered on Stack Overflow]. https://stackoverflow.com/questions/30115447/jquery-backstretch-plugin-wont-work-at-all-new-to-programming
-
-- <p>Maciej Leszczynski. (2019). Pure CSS 3D Gallery Markdown. https://gist.github.com/CodeMyUI/fe2b8a81eb59a686d70cf44ff56d1413
+- <p>Stack Overflow. _Pretty Git branch graphs_. https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
 
 ---
 
