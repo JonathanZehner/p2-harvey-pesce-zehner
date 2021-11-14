@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+:root {
+  --red-color: #b5111a;
+  --black-color: #222222;
+  --blue-text-color: #215da6;
+}
+
 /*--========== FONTS ===========--*/
 /*-- Font Family: Stencil Std --*/
 /* font: "stencil-std" */
@@ -29,23 +35,69 @@ main {
 }
 
 /*-- Pesce Style --*/
-:root {
-  --red-color: #b5111a;
-  --black-color: #222222;
-  --blue-text-color: #215da6;
+.dropdown-menu {
+  background-color: #215da6;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-h1 {
+.dropdown-menu:hover, .dropdown-menu:focus {
+  background-color: #2980B9;
+}
+
+.main-nav {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.dropdown-pages {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-pages a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-pages a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.honor {
   font-family: stencil-std;
-  font-size: 4em;
+  font-size: 270%;
   color: #215da6;
   letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
 }
 
-p {
+.home-body-copy {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  /* padding: 0 10vh; */
+  font-size: 1.2rem;
+  padding: 3vh 10vh 6vh 10vh;
 }
 
 .banners {
@@ -93,10 +145,79 @@ a {
 
 footer {
   /* Z's edit */
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
   background: url("images/foot-img.png") no-repeat bottom;
+  padding-top: 10vh;
   background-size: contain;
   /* Sticky Footer */
   flex-shrink: 0;
+}
+
+form {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+label {
+  padding: 20px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+input {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 0;
+  margin-top: 15px;
+  height: 30px;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 10%;
+  padding: 20px;
+  margin-left: 0;
+  margin-top: 15px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 0 0;
+}
+
+.contact-title-container {
+  border: solid #215da6 5px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 /*-- Zehner Style --*/
@@ -114,8 +235,14 @@ footer {
 }
 
 .main-logo {
-  width: 50%;
+  width: 25%;
+  padding-bottom: 2px;
 }
+
+.main-logo:hover {
+  cursor: pointer;
+}
+
 /* Begin Hamburger Style */
 .hamburger {
   background: none;
@@ -137,12 +264,12 @@ footer {
   background-image: linear-gradient(to right, #215da6, white, #215da6);
   color: #b5111a;
   list-style-type: none;
-  font: bold 1.5rem/1.5 "stencil-std", serif;
+  font: bold 1.5rem "stencil-std", serif;
   margin: 0 auto;
   padding: 0;
   position: fixed;
   text-align: center;
-  top: 50px;
+  top: 60px;
   transform: translateY(-200%);
   transition: transform 0.3s ease-in-out;
   width: 100%;
@@ -274,3 +401,4 @@ footer {
 /*-- Start xxx Min-Width Media Query --*/
 
 /*-- End xxx Min-Width Media Query --*/
+

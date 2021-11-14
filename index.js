@@ -7,21 +7,20 @@
 // Hamburger Menu
 // Hamburger Variables
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+const menuItems = document.querySelectorAll(".menu-item");
 const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+const closeIcon= document.querySelector(".cross");
 
 // Hamburger Function: code that makes it work
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
+    hamburger.style.display = "block";
   } else {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
+    hamburger.style.display = "none";
   }
 }
 
@@ -29,4 +28,43 @@ function toggleMenu() {
 hamburger.addEventListener("click", toggleMenu);
 // End Hamburger Menu
 
-//
+//CONTACT FORM
+//grab elements from html
+var formEl = document.querySelector('form')
+var nameInput = document.querySelector('input[type=text]')
+var emailInput = document.getElementById('email')
+
+//onsubmit, formData
+formEl.onsubmit = function(e) {
+  e.preventDefault()
+  var formData = new FormData(e.target)
+  console.log(formData.get('name'))
+  console.log(formData.get('email'))
+  console.log(Object.fromEntries(formData))
+}
+
+//submit form
+formEl.addEventListener('submit', function(e) {
+  e.preventDefault()
+  var name = nameInput.value
+  var email = emailInput(emailInput.value)
+  console.log("event listener", {name, email})
+})
+
+//dropdown menu toggle
+function mainNav() {
+  document.getElementById("dropdownMenu").classList.toggle("show");
+}
+//close menu
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-menu')) {
+    var dropdowns = document.getElementsByClassName("dropdown-pages");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
