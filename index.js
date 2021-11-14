@@ -19,12 +19,12 @@ closeIcon.style.display = "none";
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    hamburger.style.display = "block";
+    menuIcon.style.display = "block";
     closeIcon.style.display = "none";
   } else {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
-    hamburger.style.display = "none";
+    menuIcon.style.display = "none";
   }
 }
 
@@ -35,31 +35,31 @@ menuItems.forEach(
   function(menuItems) {
     menuItems.addEventListener("click", toggleMenu);
   }
-)
+);
 // End Hamburger Menu
 
 //CONTACT FORM
 //grab elements from html
-var formEl = document.querySelector('form')
-var nameInput = document.querySelector('input[type=text]')
-var emailInput = document.getElementById('email')
+var formEl = document.querySelector('form');
+var nameInput = document.querySelector('input[type=text]');
+var emailInput = document.getElementById('email');
 
 //onsubmit, formData
 formEl.onsubmit = function(e) {
-  e.preventDefault()
-  var formData = new FormData(e.target)
-  console.log(formData.get('name'))
-  console.log(formData.get('email'))
-  console.log(Object.fromEntries(formData))
-}
+  e.preventDefault();
+  var formData = new FormData(e.target);
+  console.log(formData.get('name'));
+  console.log(formData.get('email'));
+  console.log(Object.fromEntries(formData));
+};
 
 //submit form
 formEl.addEventListener('submit', function(e) {
-  e.preventDefault()
-  var name = nameInput.value
-  var email = emailInput(emailInput.value)
-  console.log("event listener", {name, email})
-})
+  e.preventDefault();
+  var name = nameInput.value;
+  var email = emailInput(emailInput.value);
+  console.log("event listener", {name, email});
+});
 
 //dropdown menu toggle
 function mainNav() {
@@ -77,4 +77,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
