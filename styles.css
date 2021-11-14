@@ -278,6 +278,10 @@ footer {
 
 /*-- Harvey Services Style -- */
 
+.services-body {
+  max-width: 1000px;
+}
+
 .services-main {
   display: flex;
   flex-direction: column;
@@ -300,12 +304,17 @@ footer {
   display: flex;
 }
 
+.services-h1 {
+  font-size: 24pt;
+}
+
 .services-section1 {
   max-width: 300px;
 }
 
 .services-section2 {
   max-width: 300px;
+  padding-top: 25px;
 }
 
 .services-section3 {
