@@ -394,6 +394,12 @@ button:hover {
 
 .services-body {
   max-width: 1000px;
+  margin: auto;
+}
+
+.services-header {
+  display: flex;
+  flex-direction: column;
 }
 
 .services-main {
