@@ -1,5 +1,3 @@
-#### wwp-harvey-pesce-zehner
-
 <img src="images/wwp-vectorlogo.png" />
 
 # Wounded Warrior Project
