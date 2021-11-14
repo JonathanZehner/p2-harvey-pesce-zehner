@@ -110,7 +110,9 @@ footer {
 }
 
 .desktop-nav {
+  color: #b5111a;
   display: none;
+  font: bold 1rem/1.5 "stencil-std", serif;
 }
 
 .page-header a,
@@ -127,7 +129,7 @@ footer {
   padding-right: 15px;
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 2rem;
   z-index: 100;
 }
 
@@ -136,15 +138,20 @@ footer {
 }
 
 .menu {
+  align-items: center;
   background-image: linear-gradient(to right, #215da6, white, #215da6);
   color: #b5111a;
+  display: flex;
   list-style-type: none;
+  flex-flow: column nowrap;
   font: bold 1.5rem/1.5 "stencil-std", serif;
+  justify-content: center;
+  left: 0;
   margin: 0 auto;
   padding: 0;
   position: fixed;
   text-align: center;
-  top: 50px;
+  top: 70px;
   transform: translateY(-200%);
   transition: transform 0.3s ease-in-out;
   width: 100%;
@@ -152,6 +159,8 @@ footer {
 
 .navMenu ul li {
   border-bottom: 1px solid white;
+  justify-content: center;
+  width: 100%;
 }
 
 .navMenu ul li a {
