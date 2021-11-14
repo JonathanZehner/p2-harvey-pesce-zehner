@@ -60,9 +60,9 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 
 - #### Issue 3:
 
-   <p> Creating a Vanilla JS Hamburger Menu.
+   <p> Creating a Vanilla JS Hamburger Menu. The menu works on CodePen, where I coded it to test it out, but will not work on our web project.
 
-  ##### Resolution: Researched (extensively) various resources online. Finally, followed a step-by-step coding tutorial by ljc-dev.
+  ##### Resolution: Researched (extensively) various resources online. Finally, followed a step-by-step coding tutorial by ljc-dev and coded a vanilla hamburger menu on CodePen.
 
 ---
 

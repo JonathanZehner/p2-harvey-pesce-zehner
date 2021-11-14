@@ -27,6 +27,12 @@ function toggleMenu() {
 
 // Hamburger Event: code that makes it happen
 hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach(
+  function(menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
 // End Hamburger Menu
 
 //
