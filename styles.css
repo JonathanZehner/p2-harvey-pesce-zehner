@@ -267,6 +267,45 @@ footer {
 }
 /*-- End Z-Style --*/
 
+/*-- Harvey Services Style -- */
+
+.services-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.setvices-top-img {
+  justify-content: center;
+}
+
+.services-groupshot {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+
+.services-main-text {
+  display: flex;
+}
+
+.services-section1 {
+  max-width: 300px;
+}
+
+.services-section2 {
+  max-width: 300px;
+}
+
+.services-section3 {
+  max-width: 300px;
+}
+
+
+
+
 /*--========== MEDIA QUERIES ==========--*/
 /*-- Start 370 Min-Width Media Query --*/
 @media (min-width: 370px) {
