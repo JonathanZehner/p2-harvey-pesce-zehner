@@ -13,7 +13,22 @@
 /* font: "Montserrat" */
 
 /*--========== UNIVERSAL STYLING ==========--*/
+/* Sticky Footer */
+html,
+body {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/*-- Pesce Style --*/
 :root {
   --red-color: #b5111a;
   --black-color: #222222;
@@ -29,7 +44,7 @@ h1 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-size: 1rem;
   padding: 0 10vh;
 }
 
@@ -40,7 +55,7 @@ p {
 
 li {
   display: inline-flex;
-  padding: 3vh 10vh;
+  /* padding: 3vh 10vh; */
 }
 
 a {
@@ -73,9 +88,11 @@ a {
 }
 
 footer {
-  background-image: url("images/foot-img.png");
-  background-position: center;
-  background-size: cover;
+  /* Z's edit */
+  background: white url("images/foot-img.png") no-repeat bottom;
+  background-size: contain;
+  /* Sticky Footer */
+  flex-shrink: 0;
 }
 
 /*-- Zehner Style --*/
@@ -114,7 +131,7 @@ footer {
 
 .menu {
   background-image: linear-gradient(to right, #215da6, white, #215da6);
-  color: red;
+  color: #b5111a;
   list-style-type: none;
   font: bold 1.5rem/1.5 "stencil-std", serif;
   margin: 0 auto;
@@ -132,7 +149,7 @@ footer {
 }
 
 .navMenu ul li a {
-  color: red;
+  color: #b5111a;
   text-decoration: none;
   text-shadow: 1px 1px 3px grey;
 }
@@ -140,8 +157,80 @@ footer {
 .showMenu {
   transform: translateY(0);
 }
-
 /* End Hamburger Menu */
+
+.about-main {
+  background: white url(images/about-hero.png) no-repeat 0 0;
+  height: 100vh;
+}
+
+.about-content {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 110%;
+  justify-content: flex-end;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: scroll;
+  width: 100%;
+}
+
+.about-wrapper .first,
+.about-wrapper .second {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-wrapper .first p,
+.about-wrapper .second p {
+  padding: 25px 2%;
+}
+
+.sub-head {
+  color: #b5111a;
+  text-transform: uppercase;
+}
+
+.bold {
+  font: bold 1rem/1.5 "Montserrat";
+}
+
+/* Footer */
+.page-footer {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.foot {
+  align-self: flex-end;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 50px 5%;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-links li {
+  padding: 0 15px;
+}
 
 /*-- End Z-Style --*/
 
