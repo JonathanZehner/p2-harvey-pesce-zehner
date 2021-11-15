@@ -430,6 +430,7 @@ button:hover {
   justify-content: center;
   text-align: center;
   margin: auto;
+  width: 100%;
 }
 
 .services-main-text {
@@ -443,15 +444,23 @@ button:hover {
 
 .services-section1 {
   max-width: 300px;
+  min-width: 300px;
+  padding: 1%;
+  order: 1;
 }
 
 .services-section2 {
   max-width: 300px;
-  padding-top: 25px;
+  min-width: 300px;
+  padding-top: 30px;
+  padding: 1%;
+  order: 2;
 }
 
 .services-section3 {
   max-width: 300px;
+  min-width: 300px;
+  order: 3;
 }
 
 /*--========== MEDIA QUERIES ==========--*/
