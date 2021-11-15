@@ -412,12 +412,7 @@ button:hover {
 
 .services-body {
   max-width: 1000px;
-  margin: auto;
-}
-
-.services-header {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
 }
 
 .services-main {
@@ -427,7 +422,7 @@ button:hover {
   margin: auto;
 }
 
-.setvices-top-img {
+.services-top-img {
   justify-content: center;
 }
 
@@ -442,7 +437,8 @@ button:hover {
 }
 
 .services-h1 {
-  font-size: 24pt;
+  color: #215da6;
+  font: bold 2rem/1.5 "stencil-std";
 }
 
 .services-section1 {
@@ -459,15 +455,6 @@ button:hover {
 }
 
 /*--========== MEDIA QUERIES ==========--*/
-/*-- Start 370 Min-Width Media Query --*/
-/* @media (min-width: 370px) {
-  .about-content {
-    height: 110%;
-  }
-} */
-
-/*-- End 370 Min-Width Media Query --*/
-
 /*-- Start 525 Min-Width Media Query --*/
 @media (min-width: 525px) {
   /* Header */
