@@ -68,6 +68,15 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 
   ##### Resolution: Researched extensively, but found no resolution to the problem.
 
+- #### Issue 5: 
+  <p> The services page has not been able to flex properly since Backstretch was implemented. Ran out of time trying to debug. 
+
+  ##### Resolution: Only view the website on a desktop.
+
+- #### Issue 6: 
+  <p> Tried implementing this API: https://npiregistry.cms.hhs.gov . Struggled for days to make it work. Slapped in a Weather form out of desperation, and even that doesn't work. 
+
+  ##### Resolution: I hate api's. 
 ---
 
 ---
