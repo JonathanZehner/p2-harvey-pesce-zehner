@@ -91,6 +91,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding-top: 2vh;
 }
 
@@ -148,7 +149,6 @@ footer {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background: url("images/foot-img.png") no-repeat bottom;
-  padding-top: 10vh;
   background-size: contain;
   /* Sticky Footer */
   flex-shrink: 0;
