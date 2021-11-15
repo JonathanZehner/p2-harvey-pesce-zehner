@@ -28,6 +28,11 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font: normal 1rem/1.5 "Montserrat", arial, sans-serif;
+}
+
+body li {
+  list-style-type: none;
 }
 
 main {
@@ -44,8 +49,9 @@ main {
   cursor: pointer;
 }
 
-.dropdown-menu:hover, .dropdown-menu:focus {
-  background-color: #2980B9;
+.dropdown-menu:hover,
+.dropdown-menu:focus {
+  background-color: #2980b9;
 }
 
 .main-nav {
@@ -53,7 +59,6 @@ main {
   display: inline-block;
   text-align: center;
   width: 100%;
-  
 }
 
 .dropdown-pages {
@@ -61,7 +66,7 @@ main {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 100%;
   z-index: 1;
@@ -106,10 +111,9 @@ main {
   max-width: 100%;
 }
 
-li {
+/* li {
   display: inline-flex;
-  /* padding: 3vh 10vh; */
-}
+} */
 
 a {
   text-decoration: none;
@@ -119,12 +123,6 @@ a {
   text-decoration: underline;
   color: black;
 }
-
-/* .main-logo {
-  float: left;
-  width: 30vh;
-  padding: 10px 0 10px 30px;
-} */
 
 .socials {
   width: 5%;
@@ -146,7 +144,7 @@ a {
 
 footer {
   /* Z's edit */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   background: url("images/foot-img.png") no-repeat bottom;
   background-size: contain;
@@ -155,7 +153,7 @@ footer {
 }
 
 form {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -191,7 +189,7 @@ button {
 }
 
 button:hover {
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -205,7 +203,7 @@ button:hover {
 .contact-title {
   text-align: center;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
   display: flex;
@@ -250,7 +248,7 @@ button:hover {
   padding-right: 15px;
   position: absolute;
   right: 1rem;
-  top: 2rem;
+  top: 1rem;
   z-index: 100;
 }
 
@@ -284,10 +282,22 @@ button:hover {
   width: 100%;
 }
 
+.navMenu ul li:hover {
+  background: black;
+}
+
 .navMenu ul li a {
   color: #b5111a;
   text-decoration: none;
   text-shadow: 1px 1px 3px grey;
+}
+
+.navMenu ul li a:visited {
+  color: #215da6;
+}
+
+.navMenu ul li a:hover {
+  color: white;
 }
 
 .showMenu {
@@ -295,22 +305,23 @@ button:hover {
 }
 /* End Hamburger Menu */
 
-.about-main {
-  background: white url(images/about-hero.png) no-repeat 0 0;
-  background-size: contain;
-  height: 70vh;
+.about-main img {
+  margin: 0 auto;
+  max-width: 855px;
+  width: 100%;
 }
 
 .about-content {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  height: 115%;
   justify-content: flex-end;
+  margin-top: -60px;
 }
 
 .about-content h1 {
-  font-size: 2.5rem;
+  color: #215da6;
+  font: bold 2.5rem/1.5 "stencil-std";
 }
 
 .about-wrapper {
@@ -349,7 +360,6 @@ button:hover {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  margin-top: 100px;
 }
 
 .foot {
@@ -362,6 +372,7 @@ button:hover {
 }
 
 .btop {
+  list-style-type: none;
   padding: 0 2%;
   text-align: center;
 }
@@ -370,6 +381,7 @@ button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  list-style-type: none;
 }
 
 .footer-links li {
@@ -399,6 +411,11 @@ button:hover {
 
 /*-- Harvey Services Style -- */
 
+.services-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .services-main {
   display: flex;
   flex-direction: column;
@@ -406,7 +423,7 @@ button:hover {
   margin: auto;
 }
 
-.setvices-top-img {
+.services-top-img {
   justify-content: center;
 }
 
@@ -414,38 +431,40 @@ button:hover {
   justify-content: center;
   text-align: center;
   margin: auto;
+  width: 100%;
 }
-
 
 .services-main-text {
   display: flex;
 }
 
+.services-h1 {
+  color: #215da6;
+  font: bold 2rem/1.5 "stencil-std";
+}
+
 .services-section1 {
   max-width: 300px;
+  min-width: 300px;
+  padding: 1%;
+  order: 1;
 }
 
 .services-section2 {
   max-width: 300px;
+  min-width: 300px;
+  padding-top: 30px;
+  padding: 1%;
+  order: 2;
 }
 
 .services-section3 {
   max-width: 300px;
+  min-width: 300px;
+  order: 3;
 }
-
-
-
 
 /*--========== MEDIA QUERIES ==========--*/
-/*-- Start 370 Min-Width Media Query --*/
-@media (min-width: 370px) {
-  .about-content {
-    height: 110%;
-  }
-}
-
-/*-- End 370 Min-Width Media Query --*/
-
 /*-- Start 525 Min-Width Media Query --*/
 @media (min-width: 525px) {
   /* Header */
@@ -463,6 +482,7 @@ button:hover {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    list-style-type: none;
     padding: 15px 25px 0 0;
   }
 
@@ -470,15 +490,11 @@ button:hover {
     width: 60px;
   }
 
+  .nav-main li a:hover {
+    color: #b5111a;
+  }
+
   /* Main Content */
-  .about-main {
-    height: 78vh;
-  }
-
-  .about-content {
-    height: 100%;
-  }
-
   .about-wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -500,16 +516,6 @@ button:hover {
 }
 
 /*-- End 525 Min-Width Media Query --*/
-
-/*-- Start 800 Min-Width Media Query --*/
-@media (min-width: 800px) {
-  /* Main Content */
-  .about-main {
-    height: 82vh;
-  }
-}
-
-/*-- End 800 Min-Width Media Query --*/
 
 /*-- Start 860 Min-Width Media Query --*/
 @media (min-width: 860px) {

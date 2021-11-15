@@ -21,6 +21,8 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 (Insert any resources used in this area: whether for research, help with coding, or designs) .
 
 - <p>Alhakem, Mohammed. _Burger Menu with vanilla JS_  **https://codepen.io/AlHakem/pen/pKoEYp**
+   
+- <p>Beautify Tools. _JavaScript Validator_  **https://beautifytools.com/javascript-validator.php**
 
 - <p>Glenn Smith. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**
 
@@ -58,7 +60,13 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 
    <p> Creating a Vanilla JS Hamburger Menu. The menu works on CodePen, where I coded it to test it out, but will not work on our web project.
 
-  ##### Resolution: Researched (extensively) various resources online. Finally, followed a step-by-step coding tutorial by ljc-dev and coded a vanilla hamburger menu on CodePen.
+  ##### Resolution: Researched (extensively) various resources online. Finally, followed a step-by-step coding tutorial by ljc-dev and coded a vanilla hamburger menu on CodePen. After extensive troubleshooting and debugging, I replaced the variables "const" with "var" and the menu worked.
+
+- #### Issue 4:
+
+   <p> Hamburger Menu buttons disappear when clicked to reveal the nav menu, giving no option to hide the hamburger menu items.
+
+  ##### Resolution: Researched extensively, but found no resolution to the problem.
 
 ---
 
