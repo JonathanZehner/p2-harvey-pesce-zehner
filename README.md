@@ -21,6 +21,8 @@ Group website design project with Dan Harvey, Madeline Pesce, and Jonathan Zehne
 (Insert any resources used in this area: whether for research, help with coding, or designs) .
 
 - <p>Alhakem, Mohammed. _Burger Menu with vanilla JS_  **https://codepen.io/AlHakem/pen/pKoEYp**
+   
+- <p>Beautify Tools. _JavaScript Validator_  **https://beautifytools.com/javascript-validator.php**
 
 - <p>Glenn Smith. _Hamburger Menu_  **https://codepen.io/g13nn/pen/eHGEF**
 
