@@ -435,6 +435,9 @@ button:hover {
 
 .services-main-text {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .services-h1 {
@@ -443,25 +446,26 @@ button:hover {
 }
 
 .services-section1 {
-  max-width: 300px;
-  min-width: 300px;
+  width: 300px;
   padding: 1%;
   order: 1;
 }
 
 .services-section2 {
-  max-width: 300px;
-  min-width: 300px;
+  width: 300px;
   padding-top: 30px;
   padding: 1%;
   order: 2;
 }
 
 .services-section3 {
-  max-width: 300px;
-  min-width: 300px;
+  width: 300px;
   order: 3;
 }
+
+/*--========== Services MEDIA QUERIES ==========--*/
+
+
 
 /*--========== MEDIA QUERIES ==========--*/
 /*-- Start 525 Min-Width Media Query --*/
