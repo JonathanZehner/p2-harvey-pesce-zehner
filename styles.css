@@ -434,8 +434,8 @@ button:hover {
 
 .services-main-text {
   display: flex;
+  flex: auto;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .services-h1 {
